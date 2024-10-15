@@ -1,0 +1,9 @@
+version: "3"
+
+tasks:
+  apply_migrate:
+    aliases:
+      - migrate
+    desc: "Apply migration"
+    cmds:
+      - go run ./cmd/migrations --storage-path=./storage/sso.db --migrations-path=./migrations
